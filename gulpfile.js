@@ -80,7 +80,8 @@ gulp.task('copy', ['css', 'css-min', 'js', 'js-min'], function () {
 gulp.task('serve', function() {
 
     browserSync.init({
-        server: "./doc"
+        server: "./doc",
+        port: 8080
     });
 
     gulp.watch('src/**', ['copy']);

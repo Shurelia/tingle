@@ -191,7 +191,7 @@
                 this.modal.appendChild(this.modalBoxFooter);
                 this.modalBoxFooter.classList.add('tingle-modal-box__footer--sticky');
                 _recalculateFooterPosition.call(this);
-                this.modalBoxContent.style['padding-bottom'] = this.modalBoxFooter.clientHeight + 20 + 'px';
+                setTimeout(() => { this.modalBoxContent.style['padding-bottom'] = this.modalBoxFooter.clientHeight + 20 + 'px' }, 5);
             }
         } else if (this.modalBoxFooter) {
             if (!this.modalBox.contains(this.modalBoxFooter)) {
